@@ -16,13 +16,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='./js/function.js'></script>
 
     <title>bootstrap lvl3</title>
 </head>
 <body>
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-     <a class="navbar-brand">Gaming</a>
+     <a class="navbar-brand ">Gaming</a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarInhoud" aria-controls="navbarInhoud" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
      </button>
@@ -30,14 +31,74 @@
      <div class="collapse navbar-collapse" id="navbarInhoud">
      <ul class="navbar-nav mr-auto"></ul>
       <li class="navbar-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
       </li>
       <li class="navbar-item">
-        <a class="nav-link" href="#">Formulier</a>
+        <a class="nav-link" href="formulier.html">schrijf u in voor de nieuws brief</a>
       </li>
+      <li class="navbar-item">
+        <a class="nav-link" href="nieuws-feed.html">Nieuws</a>
+      </li>
+      
     </ul>
      </div>
     </nav>
+
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="row"> 
+            <div class="row card-body">
+                <div id="reactie_pagina" class="clearfix jumbotron align-items-center ">
+
+
+                 <h1>Welkom bij onze website</h1><br>
+                 <p>wij wenzen u veel scroll plezier</p>
+
+                 <!-- een streep -->
+                 <hr class="my-4">
+
+                 <!-- een rss feed met het nieuws -->
+                 <h1>Het nieuws</h1>
+                 <p class="lead">voor meer nieuws kijk ook bij onze nieuws tablat via het menu</p>
+                 <rssapp-wall id="2RzNpWsOlROnqFkt"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+
+                 <!-- een streep -->
+                 <hr class="my-4">
+                
+                  <!-- dit is waar je je reactie kan toevoegen -->
+                 <p class="lead">Voeg een reactie toe</p>
+                 <form>
+                    <div style="display: flex; justify-content: center;">
+                        <div class="form-group w-25">
+                            <label for="voornaam_veld" class="form-label">Uw voornaam</label>
+                            <input type="text" class="form-control" id="voornaam_veld" required>
+                          </div>
+                     </div> 
+    
+                     <div style="display: flex; justify-content: center;">
+                        <div class="form-group w-25">
+                            <label for="text_veld" class="form-label">Uw voornaam</label>
+                            <input type="text" class="form-control" id="text_veld" required>
+                          </div>
+                     </div>
+    
+                    <input type='submit' onclick='reactie_weergeven()' value='toevoegen'> 
+                    
+                 </form> 
+                  
+                 <!-- een streep -->
+                 <hr class="my-4">
+
+                </div>
+              </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
 
 </body>
 </html>
