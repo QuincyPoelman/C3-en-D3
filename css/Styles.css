@@ -2,3 +2,11 @@ body{
     background-color: rgba(193, 200, 211, 0.986);
     
 }
+
+.navbar-custom {
+    background-color: rgba(102, 105, 108, 0.986);
+}
+
+.menu-button-custom{
+    background-color: rgb(148, 148, 157);
+}
